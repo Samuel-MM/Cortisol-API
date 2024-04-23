@@ -6,6 +6,7 @@ module.exports = function (app) {
   });
 
   app.get("/api/inicio/", initialController.getData);
-  app.post("/api/retorno-dados/", initialController.postData);
+  app.get("/api/retorno-dados/", initialController.postData);
+  app.post("/api/test-data/", initialController.testData);
 
 };
